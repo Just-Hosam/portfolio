@@ -1,3 +1,5 @@
+@import './variables';
+
 * {
 	margin: 0;
 	padding: 0;
@@ -22,4 +24,12 @@ body {
 	// height: 100vh;
 	background-image: linear-gradient(45deg, #726193, #e37b7c);
 	font-family: 'Rubik', sans-serif;
+
+	&::-webkit-scrollbar {
+		width: 0px;
+	}
+}
+
+.App {
+	@include flexDisplay(column);
 }
