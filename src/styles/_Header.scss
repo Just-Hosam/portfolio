@@ -1,0 +1,47 @@
+@import './variables';
+
+#header-main {
+	@include flexDisplay(column);
+	height: 100vh;
+	color: var(--text-color-2);
+	position: relative;
+
+	#header-icons {
+		margin-bottom: 1.6rem;
+
+		i {
+			font-size: 1.8rem;
+			margin: 0 0.65rem;
+			cursor: pointer;
+
+			&:hover {
+				color: var(--accent-color);
+			}
+		}
+	}
+
+	h1 {
+		font-size: 5rem;
+		border-top: 1px solid var(--text-color-2);
+		border-bottom: 1px solid var(--text-color-2);
+		padding: 0.8rem;
+		margin-bottom: 3rem;
+	}
+
+	p {
+		font-size: 1.6rem;
+		width: 75%;
+		margin-bottom: 6rem;
+	}
+
+	#header-more {
+		@include flexDisplay(column);
+		position: absolute;
+		bottom: 2.2rem;
+		font-size: 1.2rem;
+
+		span {
+			margin-bottom: 0.8rem;
+		}
+	}
+}
