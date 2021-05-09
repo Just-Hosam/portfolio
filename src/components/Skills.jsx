@@ -7,15 +7,19 @@ const data = [
 	},
 	{
 		title: 'Frameworks',
-		listItems: ['one', 'two', 'three'],
+		listItems: ['React', 'ExpressJS', 'Sass', 'NodeJS', 'Rails'],
 	},
 	{
 		title: 'Testing',
-		listItems: ['one', 'two', 'three'],
+		listItems: ['Cypress', 'Storybooks', 'Jest', 'Mocha', 'RSpec'],
 	},
 	{
-		title: 'Learing',
-		listItems: ['one', 'two', 'three'],
+		title: 'Currently Learing',
+		listItems: ['TypeScript', 'Data Structures', 'Refactoring by Martin Fowler', 'Scrum Methodology'],
+	},
+	{
+		title: 'Future',
+		listItems: ['Python', 'Django', 'AWS certification', ''],
 	},
 ];
 
@@ -27,7 +31,7 @@ export default function Skills() {
 
 	return (
 		<div id="skills">
-			<h2>Some of my Skills</h2>
+			<h2>Skills</h2>
 			<div id="skills-columns">{skillListComponents}</div>
 		</div>
 	);

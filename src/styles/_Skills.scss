@@ -4,10 +4,17 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-height: 400px;
 	margin-top: 3rem;
 	width: 90%;
 	border-bottom: 1px solid var(--text-color-icon);
+	padding-bottom: 3.5rem;
+	margin-bottom: 3.5rem;
+
+	h2 {
+		font-size: 3rem;
+		color: var(--accent-color);
+		margin-bottom: 2rem;
+	}
 
 	#skills-columns {
 		display: flex;
@@ -23,9 +30,21 @@
 			display: flex;
 			flex-direction: column;
 			text-align: center;
+			padding: 15px 0;
+
+			h4 {
+				font-size: 1.5rem;
+				color: var(--accent-color);
+				margin-bottom: 1rem;
+			}
 
 			ul {
 				list-style: none;
+
+				li {
+					margin-bottom: 0.3rem;
+					color: var(--text-color);
+				}
 			}
 		}
 	}
