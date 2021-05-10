@@ -1,0 +1,43 @@
+@import './variables';
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	margin-bottom: 3.5rem;
+
+	h2 {
+		font-size: 3rem;
+		color: var(--accent-color);
+		margin-bottom: 3rem;
+	}
+
+	#contact-body {
+		width: 65%;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+
+		.contact-textfield {
+			margin-bottom: 1rem;
+		}
+
+		#contact-name-email {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+
+			.contact-textfield {
+				width: 49%;
+			}
+		}
+
+		.contact-submit {
+			background-color: var(--accent-color);
+			color: white;
+		}
+	}
+}
