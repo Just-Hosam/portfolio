@@ -345,6 +345,117 @@ body::-webkit-scrollbar {
   background-color: var(--background-color);
 }
 
+.project-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 3rem;
+}
+
+.project-details h3 {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 0.8rem;
+  margin-top: 2rem;
+}
+
+.project-details p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 1.3rem;
+  padding: 0 5px;
+}
+
+.project-details header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.project-details header h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  color: var(--accent-color);
+}
+
+.project-details header .project-back {
+  position: absolute;
+  left: 0;
+}
+
+.project-details header div {
+  position: absolute;
+  right: 0;
+}
+
+.project-details header div .project-btns {
+  margin-left: 5px;
+  background-color: var(--accent-color);
+}
+
+.project-details header div .project-btns a {
+  text-decoration: none;
+  color: white;
+}
+
+.project-details .projects-img-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.project-details .projects-img-cont img {
+  border-radius: 10px;
+  max-height: 85%;
+  width: 90%;
+}
+
+.project-details .projects-mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project-details .projects-mid .projects-mid-details {
+  width: 45%;
+}
+
+.project-details .projects-mid .projects-img-cont {
+  margin: 0;
+  max-width: 50%;
+  padding: 1rem;
+}
+
 #footer-main {
   padding: 3.5rem;
   display: -webkit-box;
