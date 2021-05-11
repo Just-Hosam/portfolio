@@ -137,16 +137,16 @@ export default function Details() {
 		<Router>
 			<div id="details">
 				<Switch>
-					<Route path="/AtHome">
+					<Route path="/portfolio/AtHome">
 						<ProjectDetails data={projectDetails.atHome} />
 					</Route>
-					<Route path="/NotSoSmart">
+					<Route path="/portfolio/NotSoSmart">
 						<ProjectDetails data={projectDetails.notSoSmart} />
 					</Route>
-					<Route path="/Scheduler">
+					<Route path="/portfolio/Scheduler">
 						<ProjectDetails data={projectDetails.scheduler} />
 					</Route>
-					<Route path="/">
+					<Route path="/portfolio">
 						<Skills />
 						<Projects />
 						<Contact />
