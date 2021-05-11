@@ -2,12 +2,6 @@ import { useHistory } from 'react-router-dom';
 
 export default function ProjectCard(props) {
 	let history = useHistory();
-	// const switchView = (view) => {
-
-	// };
-
-	// function handleClick() {
-	// }
 
 	return (
 		<div className="project-card" style={{ backgroundImage: props.data.bgColor }}>
