@@ -112,7 +112,7 @@ export default function Details() {
 				</p>
 			),
 			img2: 'https://github.com/Just-Hosam/Smart-TODO-List/blob/master/docs/Readme-Screenshots/Pending%20Bar.gif?raw=true',
-			bgColor2: '#2C303A',
+			bgColor2: '',
 			problems: <p>We were perfect and had no problems {':)'}</p>,
 			img3: 'https://github.com/Just-Hosam/Smart-TODO-List/blob/master/docs/Readme-Screenshots/Dark%20Mode.png?raw=true',
 			bgColor3: '#2C303A',
