@@ -152,7 +152,7 @@ body::-webkit-scrollbar {
 
 @media only screen and (max-width: 700px) {
   #header-main {
-    min-height: 100vh;
+    min-height: 93vh;
   }
   #header-main #header-icons a i {
     font-size: 1.3rem;
@@ -164,6 +164,13 @@ body::-webkit-scrollbar {
     width: 85%;
     font-size: 1.2rem;
     text-align: center;
+  }
+  #header-main #header-more span {
+    display: none;
+  }
+  #header-main #header-more i {
+    font-size: 1.7rem;
+    margin-top: 2rem;
   }
 }
 
@@ -354,6 +361,13 @@ body::-webkit-scrollbar {
   }
   #projects #projects-cards-cont .project-card {
     width: 78%;
+  }
+  #projects #projects-cards-cont .project-card p,
+  #projects #projects-cards-cont .project-card span {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
 }
 
