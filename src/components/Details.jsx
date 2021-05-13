@@ -103,7 +103,13 @@ export default function Details() {
 			),
 			img1: 'https://github.com/Just-Hosam/Smart-TODO-List/blob/master/docs/Readme-Screenshots/Light%20Mode.png?raw=true',
 			bgColor1: '#2C303A',
-			purpose: <p>TODO lists are meant to be lazy. sigh</p>,
+			purpose: (
+				<p>
+					With a desire to explore the language analysis using Google's Natural Language API, we chose this
+					project to build a truly smart TODO list that does all the hard work for you. NotSoSmart analyzes
+					the input and classifies it into one of 5 categories (Watch, Eat, Read, Buy and General)
+				</p>
+			),
 			webstack: (
 				<p>
 					For our tech stack we chose to use a EJS for template rendering, Node & Express backend, and
@@ -113,24 +119,63 @@ export default function Details() {
 			),
 			img2: 'https://github.com/Just-Hosam/Smart-TODO-List/blob/master/docs/Readme-Screenshots/Pending%20Bar.gif?raw=true',
 			bgColor2: '',
-			problems: <p>We were perfect and had no problems {':)'}</p>,
+			problems: (
+				<p>
+					NotSoSmart being our first large collaboration project we ran the problem of properly splitting the
+					work (whether working horizontally or vertically) to minimize merge conflicts. We were able to
+					overcome such an obstacle with the guidance of mentors and consistent communication.
+				</p>
+			),
 			img3: 'https://github.com/Just-Hosam/Smart-TODO-List/blob/master/docs/Readme-Screenshots/Dark%20Mode.png?raw=true',
 			bgColor3: '#2C303A',
 		},
 		scheduler: {
 			title: 'Scheduler',
-			github: 'https://github.com/Just-Hosam/modular_dashboard',
+			github: 'https://github.com/Just-Hosam/scheduler',
 			website: '',
-			summary: 'I am a summary about @Home',
-			img1: 'https://github.com/Just-Hosam/modular_dashboard/blob/main/private_docs/ReadMePics/Light-Grid.png?raw=true',
-			bgColor1: '',
-			purpose: 'I am the purpose',
-			webstack: 'I am the webStack',
-			img2: 'https://github.com/Just-Hosam/modular_dashboard/blob/main/private_docs/ReadMePics/Light-Grid.png?raw=true',
-			bgColor2: '',
-			problems: 'I am problems',
-			img3: 'https://github.com/Just-Hosam/modular_dashboard/blob/main/private_docs/ReadMePics/Light-Grid.png?raw=true',
-			bgColor3: '',
+			summary: (
+				<div>
+					<p>
+						Scheduler is a Single-page application built using ReactJS. It allows the user to book students
+						with interviwers on appointments throughout the week. The submission form uses a self-built
+						history stack to transition between 'view modes'.
+					</p>
+					<p>
+						Scheduler is dependant on an another project to run the server and the database. The API can be
+						found{' '}
+						<a rel="noreferrer" target="_blank" href="https://github.com/Just-Hosam/scheduler-api">
+							here
+						</a>
+						.
+					</p>
+				</div>
+			),
+			img1: 'https://github.com/Just-Hosam/scheduler/blob/master/docs/Screen%20Shot%202021-03-24%20at%208.12.57%20PM.png?raw=true',
+			bgColor1: '#54a0ff',
+			purpose: '',
+			webstack: (
+				<div>
+					<p>
+						Scheduler is purely a front-end application built with ReactJS that depends on an external REST
+						API (scheduler-API).
+					</p>
+					<p>
+						Scheduler-API is built using NodeJS with Express to setup the server and PostgreSQL for the
+						Database.
+					</p>
+				</div>
+			),
+			img2: 'https://github.com/Just-Hosam/scheduler/blob/master/docs/Screen%20Shot%202021-03-24%20at%209.41.55%20PM.png?raw=true',
+			bgColor2: '#54a0ff',
+			problems: (
+				<p>
+					Scheduler being my first react project I encountered multiple obstacles handling state and
+					conditionally rendering the different views for the submission form. Thanks to react's popularity
+					finding resources and documentation assisted me in overcoming these obstacles.
+				</p>
+			),
+			img3: 'https://github.com/Just-Hosam/scheduler/blob/master/docs/Screen%20Shot%202021-03-24%20at%209.41.55%20PM.png?raw=true',
+			bgColor3: '#54a0ff',
 		},
 	};
 	return (
