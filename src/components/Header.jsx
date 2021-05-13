@@ -22,8 +22,8 @@ export default function Header(props) {
 			<p>
 				I'm a full stack web developer. I am pivoting from a background in Petroleum Engineering to the
 				Software Development world as it is ever expanding with increasing complexity and problems to solve. I
-				am objective, cheerful, and love to learn. A small break for me a chance to learn about deep subjects
-				(CPU architectures and how CPUs read machine code).
+				am objective, cheerful, and love to learn. A small break for me is a chance to learn about deep
+				subjects (CPU architectures and how CPUs read machine code).
 			</p>
 			<div id="header-more" ref={props.myRef} onClick={props.executeScroll}>
 				<span>learn more</span>

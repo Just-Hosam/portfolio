@@ -79,6 +79,11 @@
 
 			.project-card {
 				width: 78%;
+
+				p,
+				span {
+					user-select: none;
+				}
 			}
 		}
 	}

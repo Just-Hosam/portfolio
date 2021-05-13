@@ -28,15 +28,15 @@ const projectDetails = {
 				<p>
 					@Home is a household productivity dashboard that aims to bring organization, democracy and
 					collaboration to every family. Visit the hosted version of this project{' '}
+					<a rel="noreferrer" target="_blank" href="https://www.athomedashboard.com/">
+						here
+					</a>{' '}
+					or watch our 5 minute presentation{' '}
 					<a
 						rel="noreferrer"
 						target="_blank"
 						href="https://www.youtube.com/watch?v=i9a-0LJa1nI&feature=youtu.be"
 					>
-						here
-					</a>{' '}
-					or watch our 5 minute presentation{' '}
-					<a rel="noreferrer" target="_blank" href="https://www.athomedashboard.com/">
 						here
 					</a>
 					.
