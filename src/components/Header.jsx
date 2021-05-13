@@ -7,7 +7,7 @@ export default function Header(props) {
 				<a
 					rel="noreferrer"
 					target="_blank"
-					href="https://www.canva.com/design/DAEa1quHBdE/Av2MQ9oi0e0aXV7EcNyfdw/view?utm_content=DAEa1quHBdE&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
+					href="https://github.com/Just-Hosam/portfolio/blob/master/public/Hosam_Dahrooge.pdf"
 				>
 					<i className="fas fa-file-alt"></i>
 				</a>
