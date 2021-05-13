@@ -55,7 +55,6 @@
 	.projects-img-cont {
 		@include flexDisplay;
 		padding: 2rem;
-		// box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
 		border-radius: 10px;
 		margin-bottom: 3rem;
 
@@ -67,27 +66,18 @@
 	}
 
 	.projects-mid {
-		// border: 2px solid red;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		// margin-bottom: 1.3rem;
 
 		.projects-mid-details {
-			// border: 1px solid blue;
 			width: 45%;
 		}
 
 		.projects-img-cont {
 			margin: 0;
-			// border: 2px solid green;
-			// height: 300px;
 			max-width: 50%;
 			padding: 1rem;
-
-			img {
-				// height: 90%;
-			}
 		}
 	}
 }

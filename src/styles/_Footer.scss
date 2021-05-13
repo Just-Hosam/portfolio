@@ -1,19 +1,23 @@
 @import './variables';
 
 #footer-main {
-	padding: 3.5rem;
-	display: flex;
+	padding: 2.5rem;
+	@include flexDisplay(column);
 	color: white;
 
 	div {
-		margin-left: 10px;
+		margin-top: 10px;
 
-		i {
-			margin: 0 0.3rem;
-			cursor: pointer;
+		a {
+			color: inherit;
 
-			&:hover {
-				color: var(--accent-color);
+			i {
+				margin: 0 0.3rem;
+				cursor: pointer;
+
+				&:hover {
+					color: var(--accent-color);
+				}
 			}
 		}
 	}
