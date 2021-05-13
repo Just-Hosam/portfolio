@@ -81,3 +81,46 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 700px) {
+	.project-details {
+		padding: 2rem;
+		header {
+			flex-direction: column;
+
+			.project-back {
+				top: 0.5rem;
+			}
+
+			div {
+				display: flex;
+				flex-direction: column;
+				position: initial;
+				margin-top: 1.2rem;
+				width: 100%;
+
+				.project-btns {
+					margin-left: 0;
+					margin-bottom: 0.4rem;
+				}
+			}
+		}
+
+		.projects-img-cont {
+			margin-bottom: 1.3rem;
+			padding: 1rem;
+		}
+
+		.projects-mid {
+			flex-direction: column;
+
+			.projects-mid-details {
+				width: 100%;
+			}
+
+			.projects-img-cont {
+				max-width: 100%;
+			}
+		}
+	}
+}
