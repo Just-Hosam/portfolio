@@ -38,8 +38,12 @@ export default function ProjectDetails(props) {
 			</div>
 			<div className="projects-mid">
 				<div className="projects-mid-details">
-					<h3>Purpose</h3>
-					{props.data.purpose}
+					{props.data.purpose && (
+						<div>
+							<h3>Purpose</h3>
+							{props.data.purpose}
+						</div>
+					)}
 					<h3>Web Stack</h3>
 					{props.data.webstack}
 				</div>
