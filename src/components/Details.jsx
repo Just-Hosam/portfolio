@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { useState } from 'react';
 
 import Skills from './Skills';
 import Projects from './Projects/Projects';
@@ -178,26 +178,16 @@ export default function Details() {
 			bgColor3: '#54a0ff',
 		},
 	};
+
+	const [mode, setMode] = useState('MAIN');
 	return (
-		<Router>
-			<div id="details">
-				<Switch>
-					<Route path="/portfolio/AtHome">
-						<ProjectDetails data={projectDetails.atHome} />
-					</Route>
-					<Route path="/portfolio/NotSoSmart">
-						<ProjectDetails data={projectDetails.notSoSmart} />
-					</Route>
-					<Route path="/portfolio/Scheduler">
-						<ProjectDetails data={projectDetails.scheduler} />
-					</Route>
-					<Route path="/portfolio">
-						<Skills />
-						<Projects />
-						<Contact />
-					</Route>
-				</Switch>
-			</div>
-		</Router>
+		<div id="details">
+			{mode === '@HOME' && <ProjectDetails data={projectDetails.atHome} setMode={setMode} />}
+			{mode === 'NOTSOSMART' && <ProjectDetails data={projectDetails.notSoSmart} setMode={setMode} />}
+			{mode === 'SCHEDULER' && <ProjectDetails data={projectDetails.scheduler} setMode={setMode} />}
+			{mode === 'MAIN' && <Skills />}
+			{mode === 'MAIN' && <Projects setMode={setMode} />}
+			{mode === 'MAIN' && <Contact />}
+		</div>
 	);
 }

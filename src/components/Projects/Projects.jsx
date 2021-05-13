@@ -7,6 +7,7 @@ const projectsData = [
 		bgColor: 'linear-gradient(rgb(128, 118, 251), rgb(128, 118, 251))',
 		description: 'A productivity dashboard Built for families to help them organize their lives.',
 		link: '/portfolio/AtHome',
+		mode: '@HOME',
 	},
 	{
 		title: 'NotSoSmart',
@@ -14,6 +15,7 @@ const projectsData = [
 		bgColor: 'linear-gradient(135deg, #e2c35d, #da785d',
 		description: 'A TODO list app that automatically categorizes the given input using a multitude of APIs.',
 		link: '/portfolio/NotSoSmart',
+		mode: 'NOTSOSMART',
 	},
 	{
 		title: 'Scheduler',
@@ -21,12 +23,13 @@ const projectsData = [
 		bgColor: 'linear-gradient(#222f3e, #222f3e)',
 		description: 'Schedule appointments between interviewer and students.',
 		link: '/portfolio/Scheduler',
+		mode: 'SCHEDULER',
 	},
 ];
 
-export default function Projects() {
+export default function Projects(props) {
 	const projectsComponents = projectsData.map((elem, i) => {
-		return <ProjectCard key={i} data={elem} />;
+		return <ProjectCard key={i} data={elem} setMode={props.setMode} />;
 	});
 
 	return (

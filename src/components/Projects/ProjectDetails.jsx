@@ -1,16 +1,12 @@
-import { useHistory } from 'react-router-dom';
-
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 export default function ProjectDetails(props) {
-	let history = useHistory();
-
 	return (
 		<div className="project-details">
 			<header>
-				<IconButton className="project-back" onClick={() => history.goBack()}>
+				<IconButton className="project-back" onClick={() => props.setMode('MAIN')}>
 					<ArrowBackIcon />
 				</IconButton>
 				<h2>{props.data.title}</h2>
