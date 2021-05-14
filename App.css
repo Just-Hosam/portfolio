@@ -91,6 +91,7 @@ body::-webkit-scrollbar {
   font-size: 1.6rem;
   width: 75%;
   margin-bottom: 6rem;
+  text-align: center;
 }
 
 #header-main #header-more {
@@ -113,17 +114,11 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
-#header-main #header-more span {
-  margin-bottom: 0.8rem;
-}
-
-#header-main #header-more span:hover {
-  border-bottom: 1px solid white;
-}
-
 #header-main #header-more i {
   -webkit-animation: MoveUpDown 1.5s linear infinite;
           animation: MoveUpDown 1.5s linear infinite;
+  margin-top: 1.7rem;
+  font-size: 2rem;
 }
 
 @-webkit-keyframes MoveUpDown {
@@ -154,6 +149,9 @@ body::-webkit-scrollbar {
   #header-main {
     min-height: 93vh;
   }
+  #header-main #header-icons {
+    margin-top: 1.6rem;
+  }
   #header-main #header-icons a i {
     font-size: 1.3rem;
   }
@@ -163,14 +161,6 @@ body::-webkit-scrollbar {
   #header-main p {
     width: 85%;
     font-size: 1.2rem;
-    text-align: center;
-  }
-  #header-main #header-more span {
-    display: none;
-  }
-  #header-main #header-more i {
-    font-size: 1.7rem;
-    margin-top: 2rem;
   }
 }
 
@@ -307,16 +297,21 @@ body::-webkit-scrollbar {
   margin-bottom: 2rem;
   min-height: 200px;
   width: 30%;
+  -webkit-box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
+          box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
 }
 
 #projects #projects-cards-cont .project-card img {
   width: 80%;
+  -webkit-animation: fadeIn ease 1s;
+          animation: fadeIn ease 1s;
 }
 
 #projects #projects-cards-cont .project-card p,
 #projects #projects-cards-cont .project-card span {
   text-align: center;
   display: none;
+  opacity: 0;
   color: #fff;
 }
 
@@ -343,7 +338,29 @@ body::-webkit-scrollbar {
 
 #projects #projects-cards-cont .project-card:hover p,
 #projects #projects-cards-cont .project-card:hover span {
+  -webkit-animation: fadeIn ease 1s;
+          animation: fadeIn ease 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   display: block;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -464,6 +481,8 @@ body::-webkit-scrollbar {
   width: 90%;
   border-radius: 2rem;
   background-color: var(--background-color);
+  -webkit-box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
+          box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
 }
 
 @media only screen and (max-width: 700px) {
@@ -522,19 +541,23 @@ body::-webkit-scrollbar {
   left: 0;
 }
 
+.project-details header .project-back #back-btn-icon {
+  font-size: 2.2rem;
+}
+
 .project-details header div {
   position: absolute;
   right: 0;
 }
 
-.project-details header div .project-btns {
-  margin-left: 5px;
-  background-color: var(--accent-color);
+.project-details header div a {
+  text-decoration: none;
 }
 
-.project-details header div .project-btns a {
-  text-decoration: none;
+.project-details header div a .project-btns {
   color: white;
+  margin-left: 5px;
+  background-color: var(--accent-color);
 }
 
 .project-details .projects-img-cont {
@@ -584,6 +607,17 @@ body::-webkit-scrollbar {
   padding: 1rem;
 }
 
+.project-details .project-back-bottom {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-details .project-back-bottom:hover {
+  background-color: var(--accent-color);
+}
+
 @media only screen and (max-width: 700px) {
   .project-details {
     padding: 2rem;
@@ -609,7 +643,8 @@ body::-webkit-scrollbar {
     margin-top: 1.2rem;
     width: 100%;
   }
-  .project-details header div .project-btns {
+  .project-details header div a .project-btns {
+    width: 100%;
     margin-left: 0;
     margin-bottom: 0.4rem;
   }
