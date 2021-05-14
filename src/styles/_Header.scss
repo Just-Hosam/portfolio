@@ -36,6 +36,7 @@
 		font-size: 1.6rem;
 		width: 75%;
 		margin-bottom: 6rem;
+		text-align: center;
 	}
 
 	#header-more {
@@ -45,16 +46,11 @@
 		font-size: 1.2rem;
 		cursor: pointer;
 
-		span {
-			margin-bottom: 0.8rem;
-
-			&:hover {
-				border-bottom: 1px solid white;
-			}
-		}
-
 		i {
 			animation: MoveUpDown 1.5s linear infinite;
+			margin-top: 1.7rem;
+			font-size: 2rem;
+
 			@keyframes MoveUpDown {
 				0%,
 				100% {
@@ -73,6 +69,7 @@
 		min-height: 93vh;
 
 		#header-icons {
+			margin-top: 1.6rem;
 			a {
 				i {
 					font-size: 1.3rem;
@@ -87,17 +84,6 @@
 		p {
 			width: 85%;
 			font-size: 1.2rem;
-			text-align: center;
-		}
-
-		#header-more {
-			span {
-				display: none;
-			}
-			i {
-				font-size: 1.7rem;
-				margin-top: 2rem;
-			}
 		}
 	}
 }

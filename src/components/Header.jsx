@@ -20,13 +20,13 @@ export default function Header(props) {
 			</div>
 			<h1>Hosam Dahrooge</h1>
 			<p>
-				I'm a full stack web developer. I am pivoting from a background in Petroleum Engineering to the
-				Software Development world as it is ever expanding with increasing complexity and problems to solve. I
-				am objective, cheerful, and love to learn. A small break for me is a chance to learn about deep
-				subjects (CPU architectures and how CPUs read machine code).
+				I'm a full stack web developer pivoting from a background in Petroleum Engineering to the Software
+				Development world as it is ever expanding with increasing complexity and problems to solve.
+				<br />
+				<br />I am objective, cheerful, and love to learn. A small break for me is a chance to learn about
+				deep subjects (CPU architectures and how CPUs read machine code).
 			</p>
 			<div id="header-more" ref={props.myRef} onClick={props.executeScroll}>
-				<span>learn more</span>
 				<i className="fas fa-arrow-down"></i>
 			</div>
 		</header>
