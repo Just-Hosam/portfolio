@@ -62,7 +62,7 @@ export default function Contact() {
 					fullWidth
 					label="Message"
 					variant="outlined"
-					rows={4}
+					rows={8}
 					multiline
 					value={form.message}
 					onChange={(event) =>
