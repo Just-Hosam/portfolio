@@ -12,9 +12,23 @@ export default function Details(props) {
 
 	return (
 		<div id="details">
-			{mode === '@HOME' && <ProjectDetails data={projectDetails.atHome} setMode={setMode} />}
-			{mode === 'NOTSOSMART' && <ProjectDetails data={projectDetails.notSoSmart} setMode={setMode} />}
-			{mode === 'SCHEDULER' && <ProjectDetails data={projectDetails.scheduler} setMode={setMode} />}
+			{mode === '@HOME' && (
+				<ProjectDetails data={projectDetails.atHome} setMode={setMode} executeScroll={props.executeScroll} />
+			)}
+			{mode === 'NOTSOSMART' && (
+				<ProjectDetails
+					data={projectDetails.notSoSmart}
+					setMode={setMode}
+					executeScroll={props.executeScroll}
+				/>
+			)}
+			{mode === 'SCHEDULER' && (
+				<ProjectDetails
+					data={projectDetails.scheduler}
+					setMode={setMode}
+					executeScroll={props.executeScroll}
+				/>
+			)}
 			{mode === 'MAIN' && <Skills />}
 			{mode === 'MAIN' && <Projects setMode={setMode} executeScroll={props.executeScroll} />}
 			{mode === 'MAIN' && <Contact />}

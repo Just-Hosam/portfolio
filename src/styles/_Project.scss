@@ -34,19 +34,23 @@
 		.project-back {
 			position: absolute;
 			left: 0;
+
+			#back-btn-icon {
+				font-size: 2.2rem;
+			}
 		}
 
 		div {
 			position: absolute;
 			right: 0;
 
-			.project-btns {
-				margin-left: 5px;
-				background-color: var(--accent-color);
+			a {
+				text-decoration: none;
 
-				a {
-					text-decoration: none;
+				.project-btns {
 					color: white;
+					margin-left: 5px;
+					background-color: var(--accent-color);
 				}
 			}
 		}
@@ -80,6 +84,17 @@
 			padding: 1rem;
 		}
 	}
+
+	.project-back-bottom {
+		background-color: var(--accent-color);
+		color: white;
+		padding: 0.8rem;
+		margin-bottom: 0.5rem;
+
+		&:hover {
+			background-color: var(--accent-color);
+		}
+	}
 }
 
 @media only screen and (max-width: 700px) {
@@ -99,9 +114,12 @@
 				margin-top: 1.2rem;
 				width: 100%;
 
-				.project-btns {
-					margin-left: 0;
-					margin-bottom: 0.4rem;
+				a {
+					.project-btns {
+						width: 100%;
+						margin-left: 0;
+						margin-bottom: 0.4rem;
+					}
 				}
 			}
 		}

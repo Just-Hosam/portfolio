@@ -3,27 +3,32 @@ import IconButton from '@material-ui/core/IconButton';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 export default function ProjectDetails(props) {
+	const handleBack = (isBottom) => {
+		props.setMode('MAIN');
+		if (isBottom) props.executeScroll();
+	};
+
 	return (
 		<div className="project-details">
 			<header>
-				<IconButton className="project-back" onClick={() => props.setMode('MAIN')}>
-					<ArrowBackIcon />
+				<IconButton className="project-back" onClick={() => handleBack(false)}>
+					<ArrowBackIcon id="back-btn-icon" />
 				</IconButton>
 				<h2>{props.data.title}</h2>
 				<div>
 					{props.data.website && (
-						<Button className="project-btns" variant="contained">
-							<a rel="noreferrer" target="_blank" href={props.data.website}>
+						<a rel="noreferrer" target="_blank" href={props.data.website}>
+							<Button className="project-btns" variant="contained">
 								Live Site
-							</a>
-						</Button>
+							</Button>
+						</a>
 					)}
 					{props.data.github && (
-						<Button className="project-btns" variant="contained">
-							<a rel="noreferrer" target="_blank" href={props.data.github}>
+						<a rel="noreferrer" target="_blank" href={props.data.github}>
+							<Button className="project-btns" variant="contained">
 								Github
-							</a>
-						</Button>
+							</Button>
+						</a>
 					)}
 				</div>
 			</header>
@@ -52,6 +57,9 @@ export default function ProjectDetails(props) {
 			<div className="projects-img-cont" style={{ backgroundColor: props.data.bgColor3 }}>
 				<img src={props.data.img3} alt="img3" />
 			</div>
+			<Button onClick={() => handleBack(true)} className="project-back-bottom" variant="contained">
+				Go Back
+			</Button>
 		</div>
 	);
 }
