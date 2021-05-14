@@ -27,15 +27,18 @@
 			margin-bottom: 2rem;
 			min-height: 200px;
 			width: 30%;
+			box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
 
 			img {
 				width: 80%;
+				animation: fadeIn ease 1s;
 			}
 
 			p,
 			span {
 				text-align: center;
 				display: none;
+				opacity: 0;
 				color: #fff;
 			}
 
@@ -64,7 +67,19 @@
 
 			p,
 			span {
+				animation: fadeIn ease 1s;
+				// animation-delay: 3s;
+				animation-fill-mode: forwards;
 				display: block;
+			}
+		}
+
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
 			}
 		}
 	}
