@@ -45,8 +45,8 @@ export default function ProjectDetails(props) {
 							{props.data.purpose}
 						</div>
 					)}
-					<h3>Web Stack</h3>
-					{props.data.webstack}
+					<h3>Teck Stack</h3>
+					{props.data.techStack}
 				</div>
 				<div className="projects-img-cont" style={{ backgroundColor: props.data.bgColor2 }}>
 					<img src={props.data.img2} alt="img2" />

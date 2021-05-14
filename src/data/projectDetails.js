@@ -63,7 +63,7 @@ const projectDetails = {
 				a dashboard that anyone can connect to.
 			</p>
 		),
-		webstack: (
+		techStack: (
 			<p>
 				For our tech stack we chose to use a React frontend, Node & Express backend, and PostgreSQL (Postgres)
 				for our database. We chose this because we wanted to solidify and become more familiar with what we
@@ -75,14 +75,14 @@ const projectDetails = {
 		problems: (
 			<div>
 				<p>
-					During our time working on at home We discovered that working with different computer architectures
-					can present issues from a collaboration perspective. This lead us to understand the importance of
+					During our time working on at home we discovered that working with different computer architectures
+					can present issues from a collaboration perspective. This led us to understand the importance of
 					having a common development environment to avoid package versioning disasters.
 				</p>
 
 				<p>
-					Also, In our initial planning we identified issues we had in the previous collaboration projects
-					with working over other developers, causing merge and code conflicts. To keep that to a minimum, we
+					Also, in our initial planning we identified issues we had in previous collaboration projects with
+					working over other developers, causing merge and code conflicts. To keep that to a minimum, we
 					divided the project into modules where each person was able to work in parallel. We also came
 					together frequently to resolve bugs, conflicts, PRs and pair program throughout each day.
 				</p>
@@ -107,8 +107,8 @@ const projectDetails = {
 				<p>
 					NotSoSmart is a smart TODO list categorizer that takes away the hassle of having to categorize
 					movies or series you wish to watch, books or comics you might want to read, food or products you
-					want to buy in the future. While also providing you with more details regarding each item added to
-					the lists using multiple APIs.
+					want to buy in the future. It also provides you with more details regarding each item added to the
+					lists using multiple APIs.
 				</p>
 				<p>This project was developed by Hosam Dahrooge, Connie Ho, and Sydney Sisco.</p>
 			</div>
@@ -122,7 +122,7 @@ const projectDetails = {
 				input and classifies it into one of 5 categories (Watch, Eat, Read, Buy and General)
 			</p>
 		),
-		webstack: (
+		techStack: (
 			<p>
 				For our tech stack we chose to use a EJS for template rendering, Node & Express backend, and
 				PostgreSQL (Postgres) for our database. We chose this because we wanted to solidify and become more
@@ -133,9 +133,9 @@ const projectDetails = {
 		bgColor2: '',
 		problems: (
 			<p>
-				NotSoSmart being our first large collaboration project we ran the problem of properly splitting the
-				work (whether working horizontally or vertically) to minimize merge conflicts. We were able to
-				overcome such an obstacle with the guidance of mentors and consistent communication.
+				With NotSoSmart being our first large collaboration project, we ran into the problem of properly
+				splitting the work (whether working horizontally or vertically) to minimize merge conflicts. We were
+				able to overcome such an obstacle with the guidance of mentors and consistent communication.
 			</p>
 		),
 		img3: 'https://github.com/Just-Hosam/Smart-TODO-List/blob/master/docs/Readme-Screenshots/Dark%20Mode.png?raw=true',
@@ -148,9 +148,9 @@ const projectDetails = {
 		summary: (
 			<div>
 				<p>
-					Scheduler is a Single-page application built using ReactJS. It allows the user to book students with
-					interviwers on appointments throughout the week. The submission form uses a self-built history stack
-					to transition between 'view modes'.
+					Scheduler is a single-page application built using ReactJS. It allows the user to book interview
+					appointments between students and interviewers throughout the week. The submission form uses a
+					self-built history stack to transition between 'view modes'.
 				</p>
 				<p>
 					Scheduler is dependant on an another project to run the server and the database. The API can be
@@ -165,7 +165,7 @@ const projectDetails = {
 		img1: 'https://github.com/Just-Hosam/scheduler/blob/master/docs/Screen%20Shot%202021-03-24%20at%208.12.57%20PM.png?raw=true',
 		bgColor1: '#54a0ff',
 		purpose: '',
-		webstack: (
+		techStack: (
 			<div>
 				<p>
 					Scheduler is purely a front-end application built with ReactJS that depends on an external REST API
@@ -173,7 +173,7 @@ const projectDetails = {
 				</p>
 				<p>
 					Scheduler-API is built using NodeJS with Express to setup the server and PostgreSQL for the
-					Database.
+					database.
 				</p>
 			</div>
 		),
@@ -181,8 +181,8 @@ const projectDetails = {
 		bgColor2: '#54a0ff',
 		problems: (
 			<p>
-				Scheduler being my first react project I encountered multiple obstacles handling state and
-				conditionally rendering the different views for the submission form. Thanks to react's popularity
+				Scheduler, being my first React project I encountered multiple obstacles handling state and
+				conditionally rendering the different views for the submission form. Thanks to React's popularity
 				finding resources and documentation assisted me in overcoming these obstacles.
 			</p>
 		),

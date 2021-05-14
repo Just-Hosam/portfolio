@@ -15,7 +15,7 @@ const projectCards = [
 		title: '@Home',
 		logo: 'https://see.fontimg.com/api/renderfont4/BVWx/eyJyIjoiZnMiLCJoIjoyMDAsInciOjEwMDAsImZzIjoyMDAsImZnYyI6IiNGRkZGRkYiLCJiZ2MiOiIjMzUzRDRCIiwidCI6MX0/QEhvbWU/bad-unicorn-demo-regular.png',
 		bgColor: 'linear-gradient(rgb(128, 118, 251), rgb(128, 118, 251))',
-		description: 'A productivity dashboard Built for families to help them organize their lives.',
+		description: 'A productivity dashboard built for families to help them organize their lives.',
 		mode: '@HOME',
 	},
 	{

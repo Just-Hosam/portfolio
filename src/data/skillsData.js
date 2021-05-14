@@ -21,12 +21,12 @@ const skillsData = [
 		listItems: ['Cypress', 'Storybooks', 'Jest', 'Mocha', 'RSpec'],
 	},
 	{
-		title: 'Currently Learing',
+		title: 'Currently Learning',
 		listItems: ['TypeScript', 'Data Structures', 'Refactoring by Martin Fowler', 'Scrum Methodology'],
 	},
 	{
 		title: 'Future',
-		listItems: ['Python', 'Django', 'AWS certification', ''],
+		listItems: ['Python', 'Django', 'AWS certification', 'GraphQL'],
 	},
 ];
 
