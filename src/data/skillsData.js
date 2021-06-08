@@ -10,23 +10,15 @@
 const skillsData = [
 	{
 		title: 'Languages',
-		listItems: ['JavaScript', 'TypeScript', 'HTML', 'CSS', 'Ruby'],
+		listItems: ['TypeScript', 'Javascript', 'HTML', 'CSS', 'SASS/SCSS', 'Ruby'],
 	},
 	{
 		title: 'Frameworks',
-		listItems: ['React', 'ExpressJS', 'Sass', 'NodeJS', 'Rails'],
+		listItems: ['React', 'NodeJS', 'ExpressJS', 'Material-UI', 'Websockets', 'Rails'],
 	},
 	{
 		title: 'Testing',
 		listItems: ['Cypress', 'Storybooks', 'Jest', 'Mocha', 'RSpec'],
-	},
-	{
-		title: 'Currently Learning',
-		listItems: ['TypeScript', 'Data Structures', 'Refactoring by Martin Fowler', 'Scrum Methodology'],
-	},
-	{
-		title: 'Future',
-		listItems: ['Python', 'Django', 'AWS certification', 'GraphQL'],
 	},
 ];
 
