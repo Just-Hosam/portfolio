@@ -110,15 +110,15 @@ body::-webkit-scrollbar {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  bottom: 2.2rem;
+  bottom: 3rem;
   font-size: 1.2rem;
   cursor: pointer;
 }
 
 #header-main #header-more i {
-  -webkit-animation: MoveUpDown 1.5s linear infinite;
-          animation: MoveUpDown 1.5s linear infinite;
-  margin-top: 1.7rem;
+  -webkit-animation: MoveUpDown 1.35s linear infinite;
+          animation: MoveUpDown 1.35s linear infinite;
+  margin-top: 1.5rem;
   font-size: 2rem;
 }
 
@@ -129,8 +129,8 @@ body::-webkit-scrollbar {
             transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
 }
 
@@ -141,8 +141,8 @@ body::-webkit-scrollbar {
             transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
 }
 
@@ -558,6 +558,15 @@ body::-webkit-scrollbar {
   background-color: var(--accent-color);
 }
 
+.project-details img.no-bg {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  width: 95%;
+}
+
 .project-details .projects-img-cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -597,6 +606,12 @@ body::-webkit-scrollbar {
 
 .project-details .projects-mid .projects-mid-details {
   width: 45%;
+}
+
+.project-details .projects-mid img.no-bg {
+  border-radius: 10px;
+  margin-bottom: 0;
+  width: 52%;
 }
 
 .project-details .projects-mid .projects-img-cont {
