@@ -22,9 +22,9 @@ export default function Details(props) {
 					executeScroll={props.executeScroll}
 				/>
 			)}
-			{mode === 'SCHEDULER' && (
+			{mode === 'WANNABITLY' && (
 				<ProjectDetails
-					data={projectDetails.scheduler}
+					data={projectDetails.wannabitly}
 					setMode={setMode}
 					executeScroll={props.executeScroll}
 				/>

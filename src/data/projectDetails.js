@@ -89,7 +89,7 @@ const projectDetails = {
 			</div>
 		),
 		img3: 'https://github.com/Just-Hosam/modular_dashboard/blob/main/private_docs/ReadMePics/Dark-Grid.png?raw=true',
-		bgColor3: '#2c303a',
+		bgColor3: '',
 	},
 	notSoSmart: {
 		title: 'NotSoSmart',
@@ -114,7 +114,7 @@ const projectDetails = {
 			</div>
 		),
 		img1: 'https://github.com/Just-Hosam/Smart-TODO-List/blob/master/docs/Readme-Screenshots/Light%20Mode.png?raw=true',
-		bgColor1: '#2C303A',
+		bgColor1: '',
 		purpose: (
 			<p>
 				With a desire to explore the language analysis using Google's Natural Language API, we chose this
@@ -139,7 +139,7 @@ const projectDetails = {
 			</p>
 		),
 		img3: 'https://github.com/Just-Hosam/Smart-TODO-List/blob/master/docs/Readme-Screenshots/Dark%20Mode.png?raw=true',
-		bgColor3: '#2C303A',
+		bgColor3: '',
 	},
 	scheduler: {
 		title: 'Scheduler',
@@ -188,6 +188,52 @@ const projectDetails = {
 		),
 		img3: 'https://github.com/Just-Hosam/scheduler/blob/master/docs/Screen%20Shot%202021-03-24%20at%209.41.55%20PM.png?raw=true',
 		bgColor3: '#54a0ff',
+	},
+	wannabitly: {
+		title: 'WannaBitly',
+		github: 'https://github.com/Just-Hosam/WannaBitly',
+		website: 'https://wannabitly.netlify.app/',
+		summary: (
+			<div>
+				<p>
+					WannaBitly is a simple wannabe bitly. It is a single-page application that allows the user to
+					shorten long URLs giving them the ability to post it on social media without needing as much
+					character space, as well as keep track of when each URL is clicked allowing them to understand their
+					audience better.
+				</p>
+			</div>
+		),
+		img1: 'https://github.com/Just-Hosam/scheduler/blob/master/docs/Screen%20Shot%202021-03-24%20at%208.12.57%20PM.png?raw=true',
+		bgColor1: '',
+		purpose: (
+			<p>
+				As I seek employement as a Web Developer I have applied to many job listings. I hoped to use shortened
+				URLs to track what links employers tend to clicks (Resume? Portfolio? Github?...).
+			</p>
+		),
+		techStack: (
+			<div>
+				<p>
+					WannaBitly is a full stack application with its backend built with Typescript on NodeJS and
+					Express.js. The database used is PostgreSQL. The backend (API) is hosted on Heroku.
+				</p>
+				<p>
+					The frontend is built with React with TypeScript alongside Socket.io giving the user real-time
+					updates as the clicks rack up on each URL.
+				</p>
+			</div>
+		),
+		img2: 'https://github.com/Just-Hosam/scheduler/blob/master/docs/Screen%20Shot%202021-03-24%20at%209.41.55%20PM.png?raw=true',
+		bgColor2: '',
+		problems: (
+			<p>
+				I ran into multiple problems building WannaBitly, especially when it came to DevOps setups. I was able
+				to solve most of the problems with research (and some head banging) but I did also seek senior
+				developers in some of the communities I'm a part of.
+			</p>
+		),
+		img3: 'https://github.com/Just-Hosam/scheduler/blob/master/docs/Screen%20Shot%202021-03-24%20at%209.41.55%20PM.png?raw=true',
+		bgColor3: '',
 	},
 };
 
