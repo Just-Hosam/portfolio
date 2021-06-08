@@ -34,9 +34,12 @@ export default function ProjectDetails(props) {
 			</header>
 			<h3>Summary</h3>
 			{props.data.summary}
-			<div className="projects-img-cont" style={{ backgroundColor: props.data.bgColor1 }}>
-				<img src={props.data.img1} alt="img1" />
-			</div>
+			{!props.data.bgColor1 && <img src={props.data.img1} alt="img1" className="no-bg" />}
+			{props.data.bgColor1 && (
+				<div className="projects-img-cont" style={{ backgroundColor: props.data.bgColor1 }}>
+					<img src={props.data.img1} alt="img1" />
+				</div>
+			)}
 			<div className="projects-mid">
 				<div className="projects-mid-details">
 					{props.data.purpose && (
@@ -48,15 +51,21 @@ export default function ProjectDetails(props) {
 					<h3>Teck Stack</h3>
 					{props.data.techStack}
 				</div>
-				<div className="projects-img-cont" style={{ backgroundColor: props.data.bgColor2 }}>
-					<img src={props.data.img2} alt="img2" />
-				</div>
+				{!props.data.bgColor2 && <img src={props.data.img2} alt="img2" className="no-bg" />}
+				{props.data.bgColor2 && (
+					<div className="projects-img-cont" style={{ backgroundColor: props.data.bgColor2 }}>
+						<img src={props.data.img2} alt="img2" />
+					</div>
+				)}
 			</div>
 			<h3>Problems/Lesson</h3>
 			{props.data.problems}
-			<div className="projects-img-cont" style={{ backgroundColor: props.data.bgColor3 }}>
-				<img src={props.data.img3} alt="img3" />
-			</div>
+			{!props.data.bgColor3 && <img src={props.data.img3} alt="img3" className="no-bg" />}
+			{props.data.bgColor3 && (
+				<div className="projects-img-cont" style={{ backgroundColor: props.data.bgColor3 }}>
+					<img src={props.data.img3} alt="img3" />
+				</div>
+			)}
 			<Button onClick={() => handleBack(true)} className="project-back-bottom" variant="contained">
 				Go Back
 			</Button>

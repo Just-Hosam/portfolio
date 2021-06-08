@@ -56,6 +56,13 @@
 		}
 	}
 
+	img.no-bg {
+		align-self: center;
+		border-radius: 10px;
+		margin-bottom: 3rem;
+		width: 95%;
+	}
+
 	.projects-img-cont {
 		@include flexDisplay;
 		padding: 2rem;
@@ -76,6 +83,12 @@
 
 		.projects-mid-details {
 			width: 45%;
+		}
+
+		img.no-bg {
+			border-radius: 10px;
+			margin-bottom: 0;
+			width: 52%;
 		}
 
 		.projects-img-cont {
