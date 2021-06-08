@@ -43,13 +43,13 @@
 	#header-more {
 		@include flexDisplay(column);
 		position: absolute;
-		bottom: 2.2rem;
+		bottom: 3rem;
 		font-size: 1.2rem;
 		cursor: pointer;
 
 		i {
-			animation: MoveUpDown 1.5s linear infinite;
-			margin-top: 1.7rem;
+			animation: MoveUpDown 1.35s linear infinite;
+			margin-top: 1.5rem;
 			font-size: 2rem;
 
 			@keyframes MoveUpDown {
@@ -58,7 +58,7 @@
 					transform: translateY(0);
 				}
 				50% {
-					transform: translateY(5px);
+					transform: translateY(20px);
 				}
 			}
 		}
